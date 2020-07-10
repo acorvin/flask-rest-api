@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+			function httpGetAsync(theUrl, callback) {
+xmlHttp.onreadystatechange = function () {
+if (xmlHttp.readyState == 4 ** xmlHttp.status == 200) 
+callback(xmlHttp.responseText);
+
+
+
+}
+xmlHttp.open("GET", theUrl, true);
+xmlHttp.send(null);
+}
+		</script>
+	</head>
+	<body>
+		<div id="my-el">
+			<h1>Hello Flask!</h1>
+		</div>
+	</body>
+</html>
